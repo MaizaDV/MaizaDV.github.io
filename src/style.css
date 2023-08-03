@@ -5,6 +5,9 @@
 }
 
 body {
+    height: 95vh;
+    width: 95vw;
+    margin: 20px;
     background-color: #F2DAE9;
     font-family: monospace;
     color: #9c7ef5;
@@ -14,4 +17,57 @@ h1 {
     text-align: center;
     font-size: 50px;
     margin: 5em;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+div {
+    border: 1px solid red;
+    padding: 1em;
+    margin: 1em;
+}
+
+.profile {
+    width: 55%;
+    height: 25em;
+    background-color: #F2DAE9;
+    display: flex;
+    border-radius: 2em;
+    box-shadow: 0 0 10px #754de9;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav {
+    width: 15%;
+    height: 25em;
+    background-color: #F2DAE9;
+    display: flex;
+    border-radius: 2em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    border: 1px solid #762677;
+    background-color: #60276f;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+footer {
+    flex-wrap: nowrap;
 }
