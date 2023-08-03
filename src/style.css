@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2DAE9;
+    font-family: monospace;
+    color: #9c7ef5;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 5em;
+}
