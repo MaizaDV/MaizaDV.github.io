@@ -4,13 +4,28 @@
     box-sizing: border-box;
 }
 
+html {
+    background-image: url("./imagens/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+}
+
 body {
     height: 95vh;
-    width: 95vw;
+    /* width: 95vw; */
     margin: 20px;
-    background-color: #F2DAE9;
+    background-color: #F5E3E7;
     font-family: monospace;
     color: #9c7ef5;
+    --main-color: #754de9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    justify-content: space-between;
 }
 
 h1 {
@@ -24,30 +39,44 @@ main {
     align-items: stretch;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    height: 40rem;
+    /* width: 80%; */
 }
 
 div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 1em;
     margin: 1em;
 }
 
 .profile {
-    width: 55%;
-    height: 25em;
-    background-color: #F2DAE9;
+    /* background-color: #F2DAE9; */
     display: flex;
-    border-radius: 2em;
-    box-shadow: 0 0 10px #754de9;
+    --main-color: #754de9;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+.info-data {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    --main-color: #754de9;
+    background-color: #F3F1ED;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    padding: 10px;
+    margin: 10px;
+}
+
 nav {
-    width: 15%;
-    height: 25em;
-    background-color: #F2DAE9;
+    /* background-color: #F2DAE9; */
     display: flex;
     border-radius: 2em;
     align-items: center;
@@ -59,13 +88,10 @@ footer {
     position: relative;
     bottom: 0;
     display: flex;
-    border: 1px solid #762677;
+    border: 2px solid #762677;
+    border-radius: 5px;
     background-color: #60276f;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
 }
 
 footer {
