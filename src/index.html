@@ -14,29 +14,56 @@
     <span>local atual de navegação</span>
   </div>
   <main>
-    <div class="profile">
+    <div class="tab">
+      <h3>Pastas 🚧</h3>
+      <button
+        value="profile"
+        class="tabLinks active"
+        onclick="openContent(event, value)"
+      >
+        Profile
+      </button>
+      <button
+        value="projects"
+        class="tabLinks"
+        onclick="openContent(event, value)"
+      >
+        Projetos
+      </button>
+      <button
+        value="contacts"
+        class="tabLinks"
+        onclick="openContent(event, value)"
+      >
+        Contatos
+      </button>
+    </div>
+
+    <div
+      id="profile"
+      class="tabContent"
+      >
+      <h3>Profile</h3>
       <h2>Maiza Dantas</h2>
-      <h2>Desenvolvedora Web</h2>
-      <h3>Contato</h3>
+    </div>
+    
+    <div id="projects" class="tabContent">
+      <h3>Projetos</h3>
+      <p>Project</p>
+    </div>
+    
+    <div id="contacts" class="tabContent">
+      <h3>Contacts</h3>
       <ul>
         <li><a href="">Github</a></li>
         <li><a href="">Linkedin</a></li>
         <li><a href="">Email</a></li>
       </ul>
     </div>
-    <nav>
-      <h3>Pastas 🚧</h3>
-      <ul>
-        <li><a href=""> Profile </a></li>
-        <li><a href=""> Projetos </a></li>
-        <li><a href=""> Contatos </a></li>
-        <li><a href=""> Fale comigo</a></li>
-      </ul>
-    </nav>
   </main>
   <footer>
     <p>Feito por 👩‍💻 Maiza Dantas 👾</p>
   </footer>
 </body>
-
+<script src="script.js"></script>
 </html>

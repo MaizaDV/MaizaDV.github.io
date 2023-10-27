@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -34,36 +35,14 @@ h1 {
     margin: 5em;
 }
 
-main {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    height: 40rem;
-    /* width: 80%; */
-}
-
 div {
     /* border: 1px solid red; */
     padding: 1em;
     margin: 1em;
 }
 
-.profile {
-    /* background-color: #F2DAE9; */
-    display: flex;
-    --main-color: #754de9;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .info-data {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     --main-color: #754de9;
@@ -94,6 +73,56 @@ footer {
     justify-content: center;
 }
 
-footer {
-    flex-wrap: nowrap;
+/* Style the tab */
+.tab {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-image: url("./imagens/icons8-folder-192.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 30px;
+	margin: 15px;
+  width: 100%;
+  border: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #E3E1EE;
+	background-image: url("./imagens/icons8-open-folder-96.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #754de9;
+	background-image: url("./imagens/icons8-open-folder-96.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Style the tab content */
+.tabContent {
+	float: right;
+	background-color: #F2DAE9;
+  --main-color: #754de9;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
