@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maiza Dantas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="info-data">
+    <span>data com hora atual aqui</span>
+    <span>local atual de navegação</span>
+  </div>
+  <main>
+    <div class="tab">
+      <h3>Pastas 🚧</h3>
+      <button
+        value="profile"
+        class="tabLinks active"
+        onclick="openContent(event, value)"
+      >
+        Profile
+      </button>
+      <button
+        value="projects"
+        class="tabLinks"
+        onclick="openContent(event, value)"
+      >
+        Projetos
+      </button>
+      <button
+        value="contacts"
+        class="tabLinks"
+        onclick="openContent(event, value)"
+      >
+        Contatos
+      </button>
+    </div>
+
+    <div
+      id="profile"
+      class="tabContent"
+      >
+      <h3>Profile</h3>
+      <h2>Maiza Dantas</h2>
+    </div>
+    
+    <div id="projects" class="tabContent">
+      <h3>Projetos</h3>
+      <p>Project</p>
+    </div>
+    
+    <div id="contacts" class="tabContent">
+      <h3>Contacts</h3>
+      <ul>
+        <li><a href="">Github</a></li>
+        <li><a href="">Linkedin</a></li>
+        <li><a href="">Email</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>Feito por 👩‍💻 Maiza Dantas 👾</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
